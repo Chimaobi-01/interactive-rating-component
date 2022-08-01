@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass'sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: black;
+  color: white;
+  padding: 0 auto;
+}
+
+.card {
+  width: 90%;
+  height: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 1.2em;
+  background: hsl(216, 12%, 12%);
+}
+
+.stars {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star {
+  justify-content: flex-start;
+}
+
+.two {
+  visibility: hidden;
+}
+
+.three {
+  visibility: hidden;
+}
+
+.four {
+  visibility: hidden;
+}
+
+.five {
+  visibility: hidden;
+}
+
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(213, 19%, 18%);
+}
+
+.rate:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+
+}
+
+.rate:visited {
+  background: hsl(217, 12%, 63%);
+  color: white;
+}
+
+
+.btn {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 4px;
+  border-radius: 1.8em;
+  border: none;
+  background: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: hsl(25, 97%, 53%);
+  background: white;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p,
+span {
+  color: hsl(217, 12%, 63%);
+}
+
+
+.thank-you {
+  z-index: 2;
+  visibility: hidden;
+  font-family: 'Overpass'sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+} 
+
+.thank-you .selected,
+span {
+  background: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  width: fit-content;
+}
+
+.thank-you .selected {
+  padding: 5px 20px;
+  border-radius: 1.8em;
+}
+
+.thank-you .thanks {
+  font-weight: 700;
+  color: white;
+  font-size: 25px;
+}

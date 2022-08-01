@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      padding: 20px 0;
+      
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <div class="card select-rating">
+    <div class="stars star">
+      <div class="circle"> <img src="/images/icon-star.svg" alt="icon">
+      </div>
+      <div class="circle two"> <img src="/images/icon-star.svg" alt="icon">
+      </div>
+      <div class="circle three"> <img src="/images/icon-star.svg" alt="icon">
+      </div>
+      <div class="circle four"> <img src="/images/icon-star.svg" alt="icon">
+      </div>
+      <div class="circle five"> <img src="/images/icon-star.svg" alt="icon">
+      </div>
+    </div>
+
+    <h2> How did we do? </h2>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering! </p>
+
+    <div class="stars">
+      <span class="circle rate" id="one">1</span>
+      <span class="circle rate" id="two">2</span>
+      <span class="circle rate" id="three">3</span>
+      <span class="circle rate" id="four">4</span>
+      <span class="circle rate" id="five">5</span>
+    </div>
+
+    <button class="btn">Submit</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+   <div class="card thank-you">
+     <img src="/images/illustration-thank-you.svg" >
+   <p class="selected"> You selected <span>4</span> out of 5</p>
+
+   <p class="thanks">Thank you!</p>
+   
+   
+   <p>We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch! </p>
+  </div> 
+
+
+  <!-- Thank you state end -->
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
+    <script src="script.js"></script>
+
+</body>
+
+</html>
